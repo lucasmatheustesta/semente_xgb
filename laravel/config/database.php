@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'pgsql'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '216.172.173.17'),
+            'host' => env('DB_HOST', '200.136.214.214'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'seon3529_febrasgo'),
-            'username' => env('DB_USERNAME', 'seon3529_febrasg'),
-            'password' => env('DB_PASSWORD', '34867519'),
+            'database' => env('DB_DATABASE', 'semente'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', 'lu130794'),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
