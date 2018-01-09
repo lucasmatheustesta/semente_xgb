@@ -14,7 +14,7 @@ class AlterTableFiles extends Migration
     public function up()
     {
         Schema::table('files',function($table){
-            $table->integer('category_id')->unsigned();
+//            $table->integer('category_id')->unsigned();
             $table->foreign('category_id')->references('id')->on('filecategories');
         });
     }
