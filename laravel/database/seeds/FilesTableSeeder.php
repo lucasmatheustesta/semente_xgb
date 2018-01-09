@@ -18,8 +18,8 @@ class FilesTableSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        $school 	= School::orderByRaw('RAND()')->first();
-        $category 	= FileCategorie::orderByRaw('RAND()')->first();
+        $school 	= School::orderByRaw('RANDOM()')->first();
+        $category 	= FileCategorie::orderByRaw('RANDOM()')->first();
 
         foreach (range(1, 50) as $i) {
         	File::create([

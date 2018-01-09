@@ -18,7 +18,7 @@ class SchoolsTableSeeder extends Seeder
         $faker = Faker::create();
 
         foreach (range(1, 100) as $i) {
-        	//$city = City::where('state_id', 35)->orderByRaw('RAND()')->first();
+        	//$city = City::where('state_id', 35)->orderByRaw('RANDOM()')->first();
         	School::create([
 				'name' => $faker->words(3, true),
 				'email' => $faker->unique()->email(),

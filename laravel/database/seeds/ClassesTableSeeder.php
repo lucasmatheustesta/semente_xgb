@@ -20,8 +20,8 @@ class ClassesTableSeeder extends Seeder
 
         foreach (range(1, 100) as $i) {
 
-        	$year = Year::orderByRaw('RAND()')->first();
-        	$school = School::orderByRaw('RAND()')->first();
+        	$year = Year::orderByRaw('RANDOM()')->first();
+        	$school = School::orderByRaw('RANDOM()')->first();
 
         	Classe::create([
         		'name' => $faker->words(3, true),

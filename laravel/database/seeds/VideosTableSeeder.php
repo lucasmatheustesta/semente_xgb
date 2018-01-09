@@ -17,8 +17,8 @@ class VideosTableSeeder extends Seeder
     public function run()
     {
         $faker 		= Faker::create();
-        $category 	= VideoCategorie::orderByRaw('RAND()')->first();
-        $year 		= Year::orderByRaw('RAND()')->first();
+        $category 	= VideoCategorie::orderByRaw('RANDOM()')->first();
+        $year 		= Year::orderByRaw('RANDOM()')->first();
 
         $videos = array(
         	'https://vimeo.com/231352560',

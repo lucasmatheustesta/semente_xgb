@@ -14,7 +14,7 @@ class AlterTableVideos extends Migration
     public function up()
     {
         Schema::table('videos',function($table){
-//            $table->integer('category_id')->unsigned();
+            $table->integer('category_id')->unsigned()->default('1');
             $table->foreign('category_id')->references('id')->on('videocategories');
         });
     }
