@@ -13,13 +13,13 @@ class CreateStatesTable extends Migration
      */
     public function up()
     {
-/*        Schema::create('states', function (Blueprint $table) {
+        Schema::create('states', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name', 64)->unique();
             $table->string('abbr', 2)->unique();
             $table->timestamps();
-        });*/
+        });
     }
 
     /**
@@ -29,6 +29,6 @@ class CreateStatesTable extends Migration
      */
     public function down()
     {
-     //   Schema::drop('states');
+        Schema::drop('states');
     }
 }
